@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Minh Hieu</title>
+  <style>
+    .container{
+      width: 200px; margin-right: auto;
+      font-size: 15px; text-align: center;
+      
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>GIẢI PHƯƠNG TRÌNH BẬC 2: ax<sup>2</sup> + bx + c = 0 </h3>
+    <hr>
+    <form>
+      <p><label>A</label> <input type="text" id="a"> </p> 
+      <p><label>B</label> <input type="text" id="b"> </p> 
+      <p><label>C</label> <input type="text" id="c"> </p> 
+      <button onclick="ptb2.giai()" >Giải Phương trình</button>
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  var ptb2 = {
+    giai:function(){
+      alert('a')
+      var a = document.getElementById("a").value;
+      var b = document.getElementById("b").value;
+      var c = document.getElementById("c").value;
+
+      if (a==0)
+      {
+        //ptb1
+      }
+      else{
+        var delta = b*B - 4*a*c;
+        if (delta<0){
+          //ptvn
+        }
+        else if (delta==0) {
+          //kép
+        }
+        else{
+          //2 nghiệm
+          var x1 =(-b - Math.sqrt(delta)/(2*a));
+          var x2 =(-b + Math.sqrt(delta)/(2*a));
+          var str= <p>Phương trình có 2 nghiệm</p>
+          document.getElementById("kq").innerHTML=str;
+        }
+      }
+    }
+  }
+</script>
